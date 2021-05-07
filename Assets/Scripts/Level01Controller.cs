@@ -18,25 +18,9 @@ public class Level01Controller : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            ExitLevel();
-        }
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            DecreaseHealth(-50);
-        }
-
     }
     public void ExitLevel()
     {
-        int highScore = PlayerPrefs.GetInt("HighScore");
-        if (_currentScore > highScore)
-        {
-            PlayerPrefs.SetInt("HighScore", _currentScore);
-            Debug.Log("New high score: " + _currentScore);
-        }
         SceneManager.LoadScene("MainMenu");
     }
 

@@ -10,6 +10,7 @@ public class MouseLook : MonoBehaviour
     public Transform playerBody;
 
     float xRotation = 0f;
+    float yRotation = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -28,5 +29,6 @@ public class MouseLook : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
+         
     }
 }
