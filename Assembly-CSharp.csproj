@@ -57,13 +57,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\MainMenuController.cs" />
+    <Compile Include="Assets\Scripts\InventoryItem.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Level01Controller.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
+    <Compile Include="Assets\Scripts\PickUpItem.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
-    <Compile Include="Assets\Scripts\AudioManager.cs" />
-    <Compile Include="Assets\Scripts\PickUpItem.cs" />
-    <Compile Include="Assets\Scripts\InventoryItem.cs" />
+    <Compile Include="Assets\Scripts\InventoryItem2.cs" />
+    <Compile Include="Assets\Scripts\Grid.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
