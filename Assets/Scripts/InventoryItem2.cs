@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using System.Collections;
 using UnityEngine.UI;
+
 
 public class InventoryItem2 : EventTrigger
 {
-    [SerializeField] AudioClip _pickUp;
-    [SerializeField] AudioClip _putDown;
     [SerializeField] AudioClip _inventoryOpen;
 
     private bool dragging;
@@ -39,14 +39,12 @@ public class InventoryItem2 : EventTrigger
     {
         dragging = true;
         offset = eventData.position - new Vector2(transform.position.x, transform.position.y);
-        controller.PlayPickUp();
     }
 
     public override void OnPointerUp(PointerEventData eventData)
     {
         dragging = false;
         SnapToGrid(offset);
-        controller.PlayPutDown();
     }
 
     private void SnapToGrid(Vector3 release)

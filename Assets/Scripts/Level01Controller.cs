@@ -24,19 +24,4 @@ public class Level01Controller : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void IncreaseScore(int scoreIncrease)
-    {
-        _currentScore += scoreIncrease;
-
-        _currentScoreTextView.text =
-            "Score: " + _currentScore.ToString();
-    }
-
-    public void DecreaseHealth(int healthDecrease)
-    {
-        _currentHealth -= healthDecrease;
-
-        _currentHealthTextView.text =
-            "Health: " + _currentHealth.ToString();
-    }
 }

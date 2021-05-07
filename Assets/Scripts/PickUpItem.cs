@@ -8,6 +8,7 @@ public class PickUpItem : MonoBehaviour
 
     [SerializeField] GameObject _visualsToDeactivate = null;
     [SerializeField] GameObject _visualsToEnable = null;
+    [SerializeField] AudioSource _audioSource = null;
 
     Collider _colliderToDeactivate = null;
 
@@ -31,6 +32,7 @@ public class PickUpItem : MonoBehaviour
             gameObject.GetComponent<Canvas>();
             Cursor.lockState = CursorLockMode.None;
             EnableObject();
+            _audioSource.Play();
         }
     }
 
